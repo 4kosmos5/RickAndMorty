@@ -40,7 +40,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-afterEvaluate {
+
+/*afterEvaluate {
     android.libraryVariants.each {variant->
         publishing.publications.create(variant.name, MavenPublication) {
          from components.findByName(variant.name)
@@ -48,6 +49,16 @@ afterEvaluate {
             groupId = "com.wellsoft"
             artifactId = "glebLibrary"
             version = "1.0.3"
+        }
+    }
+}*/
+
+project.afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+            }
         }
     }
 }
