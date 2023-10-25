@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "SemyonLibrary"
-include ':app'
+//include ':app'
 include ':glebLibrary'
