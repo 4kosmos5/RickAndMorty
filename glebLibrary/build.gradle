@@ -41,7 +41,7 @@ dependencies {
 }
 
 
-/*afterEvaluate {
+afterEvaluate {
     android.libraryVariants.each {variant->
         publishing.publications.create(variant.name, MavenPublication) {
          from components.findByName(variant.name)
@@ -49,21 +49,6 @@ dependencies {
             groupId = "com.wellsoft"
             artifactId = "glebLibrary"
             version = "1.0.3"
-        }
-    }
-}*/
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-            }
-        }
-        repositories {
-            maven {
-                url = mavenLocal().url
-            }
         }
     }
 }
