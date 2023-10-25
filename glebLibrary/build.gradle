@@ -53,11 +53,16 @@ dependencies {
     }
 }*/
 
-project.afterEvaluate {
+afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
                 from components.release
+            }
+        }
+        repositories {
+            maven {
+                url = mavenLocal().url
             }
         }
     }
