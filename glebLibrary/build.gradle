@@ -49,6 +49,7 @@ afterEvaluate {
             groupId = "com.wellsoft"
             artifactId = "glebLibrary"
             version = "1.0.3"
+            setVersion("1.0.3")
         }
     }
 }
