@@ -1,0 +1,35 @@
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        myPublish (MavenPublication) {
+            groupId "com.wellsoft.gleblibrary"
+            artifactId "gleblibrary"
+            version "1.0.3"
+            artifact "$buildDir/outputs/aar/glebLibrary-release.aar"
+
+
+            pom.withXml {
+                def dependencies = asNode().appendNode('dependencies')
+                configurations.getByName("releaseCompileClasspath").getResolvedConfiguration().getFirstLevelModuleDependencies().each {
+                    def dependency = dependencies.appendNode('dependency')
+                    dependency.appendNode('groupId', it.moduleGroup)
+                    dependency.appendNode('artifactId', it.moduleName)
+                    dependency.appendNode('version', it.moduleVersion)
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            url "https://github.com/4kosmos5/glebLibrary/tree/main/glebLibrary"
+            credentials(HttpHeaderCredentials) {
+                name = "Private-Token"
+                value = "gitLabAccessToken"
+            }
+            authentication {
+                header(HttpHeaderAuthentication)
+            }
+        }
+    }
+}

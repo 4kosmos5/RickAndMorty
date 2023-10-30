@@ -40,6 +40,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
+apply from: "$rootDir/gradle-mvn-push.gradle"
+
 
 afterEvaluate {
     android.libraryVariants.each {variant->
@@ -47,9 +49,8 @@ afterEvaluate {
          from components.findByName(variant.name)
 
             groupId = "com.wellsoft"
-            artifactId = "glebLibrary"
+            artifactId = "gleblibrary"
             version = "1.0.3"
-            setVersion("1.0.3")
         }
     }
 }
