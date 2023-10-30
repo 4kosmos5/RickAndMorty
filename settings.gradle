@@ -10,6 +10,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url "https://github.com/4kosmos5/glebLibrary/tree/main/glebLibrary"
+            name "GitHub"
+            credentials(HttpHeaderCredentials) {
+                name = "Private-Token"
+                value = "gitLabAccessToken"
+            }
+        }
     }
 }
 

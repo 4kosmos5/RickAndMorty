@@ -22,7 +22,7 @@ publishing {
     }
     repositories {
         maven {
-            url "https://github.com/4kosmos5/glebLibrary/tree/main/glebLibrary"
+            url "https://gitlab.com/4kosmos5/glebLibrary/glebLibrary"
             credentials(HttpHeaderCredentials) {
                 name = "Private-Token"
                 value = "gitLabAccessToken"
