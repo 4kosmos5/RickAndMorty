@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_16"
+    android:layout_marginBottom="@dimen/margin_16">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/FontTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Campaign Manager Morty" />
+
+            <TextView
+                android:id="@+id/status_tv"
+                style="@style/FontStandardStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="status" />
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="@dimen/margin_12"
+                android:background="@drawable/bg_border">
+
+                <ImageView
+                    android:layout_margin="@dimen/margin_1"
+                    android:id="@+id/image_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

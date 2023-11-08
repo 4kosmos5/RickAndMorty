@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_26">26dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_46">46dp</dimen>
+    <dimen name="margin_52">52dp</dimen>
+    <dimen name="margin_64">64dp</dimen>
+    <dimen name="margin_72">72dp</dimen>
+    <dimen name="margin_86">86dp</dimen>
+    <dimen name="margin_250">250dp</dimen>
+
+    <dimen name="size_text_10">10sp</dimen>
+    <dimen name="size_text_12">12sp</dimen>
+    <dimen name="size_text_14">14sp</dimen>
+    <dimen name="size_text_16">16sp</dimen>
+    <dimen name="size_text_17">17sp</dimen>
+    <dimen name="size_text_18">18sp</dimen>
+    <dimen name="size_text_22">22sp</dimen>
+    <dimen name="size_text_24">24sp</dimen>
+    <dimen name="size_text_26">26sp</dimen>
+    <dimen name="size_text_32">32sp</dimen>
+
+</resources>

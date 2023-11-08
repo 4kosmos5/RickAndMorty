@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_character"
+    app:startDestination="@+id/characterFragment">
+
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.example.rickandmortysemyon.ui.screen.character.CharacterFragment"
+        android:label="@string/title_character"
+        tools:layout="@layout/fragment_character">
+
+        <action
+            android:id="@+id/action_leaderboard_to_userProfile"
+            app:destination="@id/infoCharacterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/infoCharacterFragment"
+        android:name="com.example.rickandmortysemyon.ui.screen.character.InfoCharacterFragment"
+        android:label="@string/title_info_character"
+        tools:layout="@layout/fragment_info_character" />
+
+</navigation>

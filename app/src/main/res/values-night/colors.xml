@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#F5F5F5</color>
+    <color name="colorPrimaryVariant">@color/colorOnBackgroundVariant</color>
+    <color name="colorSecondary">#DCDCDC</color>
+
+    <color name="colorBackground">#121212</color>
+    <color name="colorSurface">#333333</color>
+    <color name="colorError">#26E53935</color>
+
+    <color name="colorOnPrimary">#121212</color>
+    <color name="colorOnSecondary">#121212</color>
+    <color name="colorOnBackground">#DCDCDC</color>
+    <color name="colorOnBackgroundVariant">#0ADCDCDC</color>
+    <color name="colorOnSurface">#DCDCDC</color>
+    <color name="colorOnSurfaceVariant">#9E9E9E</color>
+    <color name="colorOnError">#E53935</color>
+    <color name="colorSwipeLoader">@color/colorBackground</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+</resources>

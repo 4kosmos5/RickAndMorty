@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RickAndMortySemyon" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.RickAndMortySemyon" parent="Base.Theme.RickAndMortySemyon" />
+
+    <!--FontStyle-->
+
+    <style name="FontStandardStyle">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorOnBackground</item>
+        <item name="android:textColorHint">@color/colorOnSurfaceVariant</item>
+        <item name="android:textColorLink">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/size_text_14</item>
+    </style>
+
+    <style name="FontTitleStyle" parent="FontStandardStyle">
+        <item name="android:textSize">@dimen/size_text_18</item>
+    </style>
+
+    <style name="FontSubTitleStyle" parent="FontStandardStyle">
+        <item name="android:textSize">@dimen/size_text_16</item>
+    </style>
+
+    <style name="FontSmallStyle" parent="FontStandardStyle">
+        <item name="android:textSize">@dimen/size_text_12</item>
+    </style>
+
+    <style name="FontErrorStatusStyle" parent="FontStandardStyle">
+        <item name="android:textSize">@dimen/size_text_10</item>
+        <item name="android:textColor">@color/colorOnError</item>
+    </style>
+
+    <style name="FontDescriptionStyle" parent="FontStandardStyle">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="FontGrayStyle" parent="FontStandardStyle">
+        <item name="android:textColor">@color/colorOnSurfaceVariant</item>
+        <item name="android:textSize">@dimen/size_text_12</item>
+    </style>
+
+</resources>
