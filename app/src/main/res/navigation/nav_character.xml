@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/characterFragment"
-        android:name="com.example.rickandmortysemyon.ui.screen.character.CharacterFragment"
+        android:name="com.semyon.rickandmorty.ui.screen.character.CharacterFragment"
         android:label="@string/title_character"
         tools:layout="@layout/fragment_character">
 
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/infoCharacterFragment"
-        android:name="com.example.rickandmortysemyon.ui.screen.character.InfoCharacterFragment"
+        android:name="com.semyon.rickandmorty.ui.screen.character.InfoCharacterFragment"
         android:label="@string/title_info_character"
         tools:layout="@layout/fragment_info_character" />
 

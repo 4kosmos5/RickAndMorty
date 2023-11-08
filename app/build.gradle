@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.rickandmortysemyon'
+    namespace 'com.semyon.rickandmorty'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.rickandmortysemyon"
+        applicationId "com.semyon.rickandmorty"
         minSdk 24
         targetSdk 33
         versionCode 1
